@@ -101,26 +101,26 @@
   <!-- mermaid erquirements -->
   <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script type="text/javascript">mermaid.initialize({ startOnLoad: false });</script>
+  <!-- 复制到剪贴板 -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
   <!-- 引入外链脚本 -->
   <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
   
-	<!-- LiveRe City install code -->
-	<div id="lv-container" data-id="city" data-uid="MTAyMC80MTUxOS8xODA2Ng==">
-		<script type="text/javascript">
-	   (function(d, s) {
-	       var j, e = d.getElementsByTagName(s)[0];
+  <!-- comment换成gitalk -->
+	<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
 	
-	       if (typeof LivereTower === 'function') { return; }
-	
-	       j = d.createElement(s);
-	       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-	       j.async = true;
-	
-	       e.parentNode.insertBefore(j, e);
-	   })(document, 'script');
-		</script>
-	<noscript> Please activate JavaScript for write a comment in LiveRe</noscript>
-	</div>
-	<!-- completed City install code -->  
+	<script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+	<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+	<script>
+	  const gitalk = new Gitalk({
+	    clientID: '51d0536ed0ef484cd39d',
+	    clientSecret: 'b53f787454d4872dc3bedc1fd6d85f63b2b76072',
+	    repo: 'blog',
+	    owner: 'thomascatlee',
+	    admin: ['thomascatlee'],
+	    // facebook-like distraction free mode
+	    distractionFreeMode: true
+	  })
+	</script>
 </body>
 </html>
