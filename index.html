@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">因为是Github所以有点慢要等会哈......</div>
   <script>
     const sleep = ms => new Promise(r => setTimeout(r, ms));
     window.$docsify = {
@@ -24,6 +24,15 @@
       name: '猫窝',
       coverpage: true,
 			formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
+			search: {
+        noData: {
+          '/': '没有结果!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': '搜索'
+        }
+      },
       markdown: {
         renderer: {
           code: function(code, lang) {
@@ -76,6 +85,13 @@
               active.parentElement.style.display = "block";
             }
           });
+				hook.beforeEach(function (html) {
+
+            return html
+              + '\n\n----\n\n'
+              + '最后修改时间 {docsify-updated}'
+          })
+        },          
         }
       ]
     }
@@ -84,6 +100,7 @@
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
   <!-- language highlight -->
   <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-clike.min.js"></script>
@@ -91,8 +108,9 @@
   <script src="//unpkg.com/prismjs/components/prism-cpp.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-cmake.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>  
   <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-html.min.js"></script>
   <!-- flowchart requirements -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.0/raphael-min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.0/flowchart.min.js"></script>
