@@ -23,5 +23,5 @@ nexus-args=${jetty.etc}/jetty.xml,${jetty.etc}/jetty-http.xml,${jetty.etc}/jetty
 
 重启nexus，然后执行`keytool -printcert -sslserver ${NEXUS_DOMAIN}:${SSL_PORT} -rfc`，就能看到证书啦。
 
-把证书内容复制下来， vim /etc/docker/certs.d/${NEXUS_DOMAIN}:${SSL_PORT}/ca.crt 粘贴进去。
+把证书内容复制下来， `vim /etc/docker/certs.d/${NEXUS_DOMAIN}:${SSL_PORT}/ca.crt` 粘贴进去。
 
