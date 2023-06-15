@@ -20,4 +20,5 @@ jobs:
       with:
         personal_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
+        publish_dir: ./
         keep_files: true
