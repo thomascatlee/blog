@@ -3,7 +3,7 @@ name: Deploy Docsify
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
