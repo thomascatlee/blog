@@ -19,6 +19,13 @@ jobs:
             git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
     - name: Generate Sidebar
       run: find . -mindepth 2 -name "*.md" | awk -F'/' 'BEGIN {RS="\\.md"} {arr[$2]=arr[$2]"\n    - ["$3"](/"$2"/"$3")"} END { num = asorti(arr, indices); for (i=1; i<=num; ++i) if (indices[i]) print "- "indices[i], arr[indices[i]]}' > _sidebar.md
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./
+        keep_files: true
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Upload artifact
