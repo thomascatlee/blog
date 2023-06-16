@@ -1,4 +1,4 @@
-name: Deploy Docsify
+name: Deploy Docsify to gh-pages
 
 on:
   push:
