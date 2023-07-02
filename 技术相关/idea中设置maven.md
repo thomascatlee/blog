@@ -2,7 +2,7 @@
 
 拿到一个java工程，是用eclipse写的，依赖管理用的maven；我没有eclipse了，只有jetbrain的idea，要做一些设置才可以。
 
-![设置配置文件和repo存放目录](_v_images/20200629180505413_16087.png =762x)
+![设置配置文件和repo存放目录](_v_images/20200629180505413_16087.png)
 
 maven的设置，最好用国内的repo，目前可用的大概也只有ali的了。
 
