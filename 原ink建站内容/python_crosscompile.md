@@ -18,6 +18,8 @@ import struct
 File "/usr/lib/python3.5/struct.py", line 13, in <module>
 from _struct import * 
 ImportError: No module named '_struct'
-```
-    这是海思上的python出错了，找不到扩展模块。base64是自带的，照理说不应该呀。以为是路径问题，查看了sys.path，/usr/lib/python3.5/lib-dynload已经包含在里面了。外事不决就google，在python的论坛上找到了这个：[Missing extensions modules when cross compiling python 3.5.2 for arm on Linux](https://bugs.python.org/issue28444)，还是交叉编译的锅。编译时候setup.py没有编译扩展模块。好在已经有人做了补丁，patch一下，重新make install，OK。
-    然后ansible也OK了。
+```  
+
+
+这是海思上的python出错了，找不到扩展模块。base64是自带的，照理说不应该呀。以为是路径问题，查看了sys.path，/usr/lib/python3.5/lib-dynload已经包含在里面了。外事不决就google，在python的论坛上找到了这个：[Missing extensions modules when cross compiling python 3.5.2 for arm on Linux](https://bugs.python.org/issue28444)，还是交叉编译的锅。编译时候setup.py没有编译扩展模块。好在已经有人做了补丁，patch一下，重新make install，OK。
+然后ansible也OK了。
