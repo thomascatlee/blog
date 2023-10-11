@@ -1,3 +1,4 @@
+---
 title: "在x86+arm上部署ceph"
 date: 2018-12-07 14:50:26 +0800
 author: me

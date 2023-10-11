@@ -1,3 +1,4 @@
+---
 title: "caddy+ink搭了个试验品"
 date: 2017-08-25 19:00:00 +0800
 author: me

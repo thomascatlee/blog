@@ -1,3 +1,4 @@
+---
 title: "syslog-ng的坑"
 date: 2018-09-25 17:59:55 +0800
 author: me

@@ -9,8 +9,8 @@
   <!--<link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"> -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
    <!-- Themes (light + dark) -->
-   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">  
+   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">  
    <meta name="description" content="">
    <title></title>
 
@@ -30,7 +30,7 @@
     window.$docsify = {
       repo: 'thomascatlee/blog',
       loadSidebar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 0,
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
       },
@@ -83,6 +83,7 @@
           }
         }
       },
+      author: '野猫',
       plugins: [
         function(hook, vm) {
           hook.doneEach(function() {
@@ -112,10 +113,11 @@
     }
   </script>
 	<!-- docsify -->
-	<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-
+	<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/front-matter.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="js/showfrontmatter.js"></script>
   <!-- language highlight -->
   <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-clike.min.js"></script>
@@ -138,14 +140,14 @@
   <!-- 复制到剪贴板 -->
   <script src="//unpkg.com/docsify-copy-code"></script>
   <!-- 更新时间 -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
   <!-- 引入外链脚本 -->
   <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
   
 
 	
 	<!-- docsify-themeable -->
-	<script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 
 
   

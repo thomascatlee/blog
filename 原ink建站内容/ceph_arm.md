@@ -1,3 +1,4 @@
+---
 title: "ceph的arm移植"
 date: 2018-11-09 10:57:45 +0800
 author: me

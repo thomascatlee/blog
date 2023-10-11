@@ -1,3 +1,4 @@
+---
 title: Movidius的计算棒
 date: 2018-06-12 17:00:00 +0800
 author: me

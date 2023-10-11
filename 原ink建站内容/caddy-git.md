@@ -1,3 +1,4 @@
+---
 title: "caddy+git实现的自动更新blog"
 date: 2017-12-05 19:30:00 +0800
 author: me
