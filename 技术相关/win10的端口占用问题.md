@@ -1,4 +1,11 @@
-# win10的端口占用问题
+---
+title: win10的端口占用问题
+date: 2021-11-14 17:53:03 +0800
+author: me
+tags:
+    - 
+---
+
 有一个应用程序启动时，绑定TCP端口失败，用netstat -ano查看，没有发现有进程占用端口，百思不得其解。
 
 在powershell下输入`netsh int ipv4 show dynamicport tcp`查看动态端口，是从1024-65535，没问题。

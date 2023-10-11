@@ -1,4 +1,11 @@
-# ffmpeg的一些杂记
+---
+title: ffmpeg的一些杂记
+date: 2023-06-09 18:09:03 +0800
+author: me
+tags:
+    - 
+---
+
 ## 格式转换
 ### 转为MP4
 ffmpeg -i input.ts -codec copy -f mp4 output.mp4

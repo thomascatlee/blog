@@ -1,4 +1,11 @@
-# 迁移到github
+---
+title: 迁移到github
+date: 2019-09-24 18:29:26 +0800
+author: me
+tags:
+    - 
+---
+
 之前的服务器似乎被墙了，70周年也懒得折腾，打算过去再说。偶然发现[docsify](https://docsify.js.org/#/)，现在的人真是聪明，用js在浏览器完成了原来静态blog工具做的md到html的工作。这样github就可以作为blog主机来使用。
 github上新开一个repo，然后参考[Wsine的blog](https://github.com/Wsine/blog)，原样复制了index.html和.travis.yml，没有用docsify的init。这样直接有了支持目录结构的侧边栏等等。docsify还有不少插件，等有空再研究。
 

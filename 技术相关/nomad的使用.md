@@ -1,4 +1,11 @@
-# nomad的使用
+---
+title: nomad的使用
+date: 2021-03-23 14:28:41 +0800
+author: me
+tags:
+    - 
+---
+
 ## nomad介绍
 Nomad是一个管理机器集群并在集群上运行应用程序的工具。
 Nomad的特点：

@@ -1,4 +1,11 @@
-# git修改子模块的url
+---
+title: git修改子模块的url
+date: 2020-08-25 19:46:43 +0800
+author: me
+tags:
+    - 
+---
+
 TortoiseGit上没有修改子模块url的地方，所以只好命令行。
 ```
 git config --file .gitmodules -l

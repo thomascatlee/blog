@@ -1,4 +1,11 @@
-# github_action2
+---
+title: github_action2
+date: 2023-06-16 17:50:56 +0800
+author: me
+tags:
+    - 
+---
+
 折腾了半天，放弃提交到master，触发action生成sidebar再提交到gh-pages，然后从gh-pages再用github的内置action发布的方式，直接自己用action实现发布。
 ```
 jobs:

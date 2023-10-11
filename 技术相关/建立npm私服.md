@@ -1,4 +1,11 @@
-# 建立npm私服
+---
+title: 建立npm私服
+date: 2020-08-25 19:46:43 +0800
+author: me
+tags:
+    - 
+---
+
 采用[Nexus](https://help.sonatype.com/repomanager3/download/download-archives---repository-manager-3)作为私服搭建工具。
 
 按照操作系统版本，下载对应Nexus。我的是Linux，下载unix版本的gz，解压后，直接运行`bin/nexus run`，Nexus就跑起来了。

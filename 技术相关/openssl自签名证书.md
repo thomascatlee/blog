@@ -1,4 +1,11 @@
-# openssl自签名证书
+---
+title: openssl自签名证书
+date: 2023-06-09 18:09:03 +0800
+author: me
+tags:
+    - 
+---
+
 openssl genrsa -out server.key 2048
  
 openssl req -new -key server.key -subj "/CN=10.30.0.163" -out server.csr

@@ -1,4 +1,11 @@
-# docker简单操作
+---
+title: docker简单操作
+date: 2020-09-15 11:06:00 +0800
+author: me
+tags:
+    - 
+---
+
 1. 安装
 从[FTP](ftp://ftpuser:suma123456@172.16.60.12/docker)下载离线安装包：`docker-19.03.12_x64.tgz、docker.service、install.sh`，运行`./install.sh docker-19.03.12_x64.tgz`安装。
 2. docker 命令

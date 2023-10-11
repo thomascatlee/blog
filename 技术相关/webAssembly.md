@@ -1,4 +1,10 @@
-# web Assembly
+---
+title: webAssembly
+date: 2021-03-23 14:32:28 +0800
+author: me
+tags:
+    - 
+---
 ## 编译 Emscripten
 git clone https://github.com/juj/emsdk.git
 cd emsdk

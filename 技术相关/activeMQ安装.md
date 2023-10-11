@@ -1,4 +1,11 @@
-# activeMQ安装
+---
+title: activeMQ安装
+date: 2020-06-29 18:08:05 +0800
+author: me
+tags:
+    - 
+---
+
 activeMQ安装后，启动显示start，但是进程消失。看log目录下，还没有生成日志。
 用activemq console，打印显示：
 ```

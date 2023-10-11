@@ -1,4 +1,10 @@
-# idea中设置maven
+---
+title: idea中设置maven
+date: 2020-06-29 18:08:05 +0800
+author: me
+tags:
+    - 
+---
 
 拿到一个java工程，是用eclipse写的，依赖管理用的maven；我没有eclipse了，只有jetbrain的idea，要做一些设置才可以。
 

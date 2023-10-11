@@ -1,4 +1,11 @@
-# SELinux导致的ssh免密登陆失败
+---
+title: SELinux导致的ssh免密登陆失败
+date: 2021-11-14 17:53:03 +0800
+author: me
+tags:
+    - 
+---
+
 新装的一台Centos7.4，配置ssh免密登陆不成功，已经确认了文件读写权限等问题，修改了sshd_config，并且同样的配置在ubuntu上一切正常。
 打开sshd的调试信息：
 ```

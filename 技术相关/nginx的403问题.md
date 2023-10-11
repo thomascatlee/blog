@@ -1,4 +1,11 @@
-# nginx的403问题
+---
+title: nginx的403问题
+date: 2020-09-15 11:06:00 +0800
+author: me
+tags:
+    - 
+---
+
 centos上安装完nginx后，设置完root，重启服务后，发现访问出现403错误，查看`/var/log/nginx/error.log`，提示
 ```
 "/opt/kylin/archive.kylinos.cn/kylin/KYLIN-ALL/index.html" is forbidden (13: Permission denied)

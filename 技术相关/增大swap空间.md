@@ -1,4 +1,11 @@
-# 增大swap空间
+---
+title: 增大swap空间
+date: 2021-03-23 14:28:41 +0800
+author: me
+tags:
+    - 
+---
+
 Linux下编译QTwebengine，编译失败，提示`virtual memory exhausted： Cannot allocate memory`，额滴神，这可是32G物理内存的机器。
 没办法，增加swap的空间吧。
 首先创建swap分区的文件

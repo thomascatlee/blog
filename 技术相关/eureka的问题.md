@@ -1,4 +1,11 @@
-# eureka的问题
+---
+title: eureka的问题
+date: 2020-09-15 11:06:00 +0800
+author: me
+tags:
+    - 
+---
+
 eureka启动后，client有一段时间无法连接
 尝试修改eureka.server.peerNodeConnectTimeoutMs: 30000 eureka.server.peerNodeReadTimeoutMs: 30000，包括修改client的超时参数，但是都不成功。
 

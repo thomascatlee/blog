@@ -1,4 +1,11 @@
-# nexus证书
+---
+title: nexus证书
+date: 2021-03-23 14:28:41 +0800
+author: me
+tags:
+    - 
+---
+
 docker需要https支持，不然需要在daemon.json里配置insecure-registries，挺麻烦的。
 看了一下，nexus支持https，但是需要自己做一个证书。
 docker里给出了生成自签名证书的方法：

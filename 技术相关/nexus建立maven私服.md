@@ -1,4 +1,11 @@
-# nexus建立maven私服
+---
+title: nexus建立maven私服
+date: 2020-08-25 19:46:43 +0800
+author: me
+tags:
+    - 
+---
+
 nexus支持很多类的私服，包括go、pip、yum等等。maven也支持的，各种配置都大同小异。
 proxy、hosted两类，proxy配置各个镜像，hosted将proxy聚到一个。
 这里记录一个maven的plugin问题。

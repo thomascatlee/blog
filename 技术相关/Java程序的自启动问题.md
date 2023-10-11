@@ -1,4 +1,11 @@
-# Java程序的自启动问题
+---
+title: Java程序的自启动问题
+date: 2020-10-09 13:45:25 +0800
+author: me
+tags:
+    - 
+---
+
 遇到一个诡异的问题，一个Java实现的业务系统，在命令行下运行一切正常，但是在rc.local里自启动，就总会出现
 ```
 Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.netflix.discovery.EurekaClient]: Factory method 'eurekaClient' threw exception; nested exception is java.lang.OutOfMemoryError: unable to create new native thread
