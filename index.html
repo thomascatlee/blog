@@ -55,6 +55,17 @@
 	    formatUpdated: "{YYYY}/{MM}/{DD}",
 	    whereToPlace: "bottom",  // "top" or "bottom", default to "bottom"
 	  	},
+	  	gitalkWithFooter: {
+	      footerInnerHtml: "<p>下面没有啦</p>",
+	      gitalkConfig: {
+	       clientID: '51d0536ed0ef484cd39d',
+	       clientSecret: 'b53f787454d4872dc3bedc1fd6d85f63b2b76072',
+	       repo: 'blog',
+	       owner: 'thomascatlee',
+	       admin: ['thomascatlee'],
+	       distractionFreeMode: false,
+	      }
+      },
       markdown: {
         renderer: {
           code: function(code, lang) {
@@ -149,6 +160,12 @@
 	<!-- docsify-themeable -->
 	<script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 
+
+	<!-- docsify-gitalk-with-footer plugin -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" />
+	
+	<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/pikapikapikaori/docsify-gitalk-with-footer@latest/src/gitalkWithFooter.js"></script>
 
   
   <!-- comment换成gitalk -->
