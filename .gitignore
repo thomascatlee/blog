@@ -2,3 +2,7 @@
 _vnote.json
 /_v_recycle_bin
 /.obsidian
+/_sidebar.md
+/repairtime.sh
+/gensidebar.sh
+/go_build_httpserver_go.exe
