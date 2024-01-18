@@ -6,7 +6,7 @@ name: Manual workflow
 # or API.
 on:
   workflow_dispatch:
-  
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -17,7 +17,7 @@ permissions:
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: false  
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -30,11 +30,12 @@ jobs:
     - name: Repair updateTime
       run:  |
             git config --global core.quotepath false
-            git log --format="@%ct" > time.txt
-            git log -1 --format="@%ct" > time1.txt
-            git log --reverse --format="@%ct" | head -1 > time2.txt
+            git log --format="@%ct" > time2.txt
+            git log -1 --format="@%ct" >> time2.txt
+            echo aaaaaaaaaaaaaaaa >> time2.txt
+            git ls-files | while read file; do git log --reverse --format="@%ct" | head -1 >> time2.txt
             git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
-    - name: Generate Sidebar 
+    - name: Generate Sidebar
       run:  |
             find . -mindepth 2 -name "*.md" | xargs ls -t -l> _filelist.md
             git ls-files | while read file; do touch -d $(git log --reverse --format="@%ct" "$file" | head -1) "$file"; done
@@ -42,7 +43,7 @@ jobs:
             find . -mindepth 2 -name "*.md" | xargs ls --time=birth -t -1 | awk -F'/' 'BEGIN {RS="\\.md"} {arr[$2]=arr[$2]"\n    - ["$3"](/"$2"/"$3")"} END { num = asorti(arr, indices); for (i=1; i<=num; ++i) if (indices[i]) print "- "indices[i], arr[indices[i]]}' > _sidebar.md
     - name: Setup Pages
       uses: actions/configure-pages@v3
-    - name: Upload artifact 
+    - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
         # Upload entire repository
