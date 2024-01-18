@@ -30,10 +30,10 @@ jobs:
     - name: Repair updateTime
       run:  |
             git config --global core.quotepath false
-            git log --format="@%ct" > time.txt 
+            git log --format="@%ct" > time.txt
             git log -1 --format="@%ct" > time1.txt
             git log --reverse --format="@%ct" | head -1 > time2.txt
-            git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done 
+            git ls-files | while read file; do touch -d $(git log -1 --format="@%ct" "$file") "$file"; done
     - name: Generate Sidebar
       run:  |
             find . -mindepth 2 -name "*.md" | xargs ls -t -l> _filelist.md
