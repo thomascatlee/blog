@@ -5,7 +5,7 @@ author: wildcat
 tags:
 ---
 想在windows下部署Ollama+open-webui。open-webui提供了docker镜像部署，linux下用的也正常，但是windows下部署不顺；docker的windows版本真难用，老是崩溃。
-按照[文档]([🚀 Getting Started | Open WebUI](https://docs.openwebui.com/getting-started/))说明，本地安装node并编译了web前端，anaconda安装了FastAPI的python环境支持，启动open-webui时总是报错。提示
+按照[文档](https://docs.openwebui.com/getting-started/)说明，本地安装node并编译了web前端，anaconda安装了FastAPI的python环境支持，启动open-webui时总是报错。提示
 
 ```
 No sentence-transformers model found with name sentence-transformers/all-MiniLM-L6-v2. Creating a new one with MEAN pooling.
