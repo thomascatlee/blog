@@ -5,7 +5,7 @@ author: wildcat
 tags:
   - ESP32
   - 单片机
-  - Python
+  - MicroPython
   - 无人机
   - Windows
 ---
