@@ -5,7 +5,7 @@ author: wildcat
 tags:
   - 昇腾
 ---
-
+![](H卡算力.md_Attachments/Pasted%20image%2020250805171647.png)
 
 
 ![](H卡算力.md_Attachments/Pasted%20image%2020250616135634.png)
